@@ -9,7 +9,7 @@ Provide contextual feedback messages for typical user actions with the handful o
 
 ## Contents
 
-* Will be replaced with the ToC, excluding the "Contents" header
+## Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
 ## Examples
