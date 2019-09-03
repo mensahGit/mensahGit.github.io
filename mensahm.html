@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+/*
+//////////////////////////////////////
+/////////// CSS Grid 
+*/
+html {
+	box-sizing: border-box;
+	
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	color: #FF9900;
+}
+/*
+//////////////////////////////////////
+/////////// Prog Bar 
+*/
+#prog {
+    background-color: #FF9900;
+    border-radius: 1.25em;
+    width: 300px;
+    height: 4px;
+    display: inline-block;
+}
+
+.progress-value {
+    color: #FFBD5C;
+    text-align: center;
+    background-color: #CC7A00;
+    transition: .3s all linear;
+    border-radius: 1.25em;
+    height: 4px;
+    display: inline-block;
+}
+
+#value {
+/*display:none;*/
+visibility: hidden;
+}
+
+.koala {
+	padding: 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/*grid-template-columns: repeat(3,auto);*/
+	height: 90vh;
+	/*justify-items: stretch;*/
+	/*align-items: stretch;*/
+	grid-gap: 10px;
+}
+
+body {
+	 background-color: #FFBD5C;
+}
+
+.list-group-item {
+	font-family: 'Anton', serif;
+	font-size: 48px;
+	margin-right: 48px;
+}
+
+
+.list-group a .fa-book:hover {
+
+	border: 3px solid #533200;
+	border-radius:5px;
+	
+	
+}
+
+img {
+	max-width: 90%;
+	margin-right: 8px;
+}
+
+.container div { 
+		background-color: #CC7A00; 
+		padding: 16px;
+		width:auto;
+}
+
+.one {
+	border: 12px solid black;
+	background-color: #CC7A00;
+}
+
+.schmoe {
+  font-family: 'Anton', serif;
+  font-size: 5em;
+  color: #000000;
+  /*margin: 0.5em;*/
+  margin: 0;
+  padding: 0;
+}
+
+.schmoe_sub {
+font-family: 'Crimson Text', serif;
+font-size: 40px;
+text-align: center;
+color: #FF9900;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 3em;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+p {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#navbar {
+	border: 12px solid black;
+	height: 100%;
+	width: 100%;
+	background-color: #FF9900;
+	/*
+	background-color: #FF9900;
+	background-color: #CC7A00;
+	background-color: #FFBD5C;
+	background-color: #533200;
+	*/
+}
+
+.loo {
+	display: block;
+	margin: 30px 20px;
+	background-color: #FFBD5C;
+	/*background-color: #CC7A00;*/
+	font-family: 'Lobster', cursive;
+   font-size: 3em;
+	width: 300px; 
+	height: 150px;
+	border: 2px solid #000;
+   box-shadow: 10px 10px 26px #533200;
+}
+
+a  {
+	text-decoration: none;
+}
+
+.loo:hover {
+	box-shadow: 10px 10px 26px #FFBD5C;
+  	border: 1px solid #FFF;
+}
+
+.moo p {
+	font-family: 'Noto Serif', serif;
+  	font-size: 1em;
+  	margin: 0;
+}
+
+@media (max-width: 900px) {
+	body {
+		background-color: #533200;
+	}
+	.container {
+		grid-template-columns: 1fr;
+	}
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="one">1	
+		<div class="koala">
+		<div id="prog">
+   <div id="bar" class="progress-value" style="width: 1%;">
+     <span id="value">1%</span>
+  </div>
+</div>
+	</div><!-- END KOALA -->
+<div class="list-group">
+  <a href="#" class="list-group-item"><i class="fa fa-book"> </i></a>
+  <a href="#" class="list-group-item"><i class="fa fa-eye"></i> </a>
+  <a href="#" class="list-group-item"><i class="fa fa-users"></i></a>
+	<a href="#" class="list-group-item"><i class="fa fa-cog"></i> </a>
+  <a href="#" class="list-group-item"><i class="fa fa-file-image-o"></i> </a>
+</div>
+	<div class="schmoe">MENSAHDESIGNS
+		<p class="schmoe_sub">Creatively.</p>
+	</div>
+		
+		
+	<img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FlogoTeeth.png?alt=media&token=ae98faa2-4d91-4b1c-8e61-97cb09f57684" alt="MDE Logo">
+
+<div id="navbar">
+<a href="https://stackblitz.com/edit/angular-ujgfvw-mdedraft-mensah?file=src%2Fapp%2Fapp.component.css">
+	<div class="loo">Biography</div>
+</a>
+
+<a href="#">
+<div class="loo">Vision</div>
+</a>
+		
+<a href="#">
+<div class="loo">Products</div>
+</a>
+		
+<a href="#">
+<div class="loo">Services</div>
+</a>
+
+<a href="#">
+<div class="loo">Portfolio</div>
+</a>	
+</div>	
+</div>
+	
+	<div>2
+<h1>Machine Learning...</h1>
+<h3>It's Hot!</h3>
+<p>"Step Right Up! Step Right Up! Everyone's a winner!" A quote from  a 1985, Tom Waits masterpiece abruptly comes to mind. Then, the rage was apparently a little cocaine paired with a late night 'Pasties and a G-String'?<br><br>Fast-forward to 2019, and oddly-enough, Machine Learning, Deep Neural Networks and Unsupervised Learning take the cake. My! Times have changed. Or have they?
+	Conceivably, we could write some convoluted algorithm foathed with our favorite loss-function of choice...just to find out if time REALLY has changed.
+	Or we could check the calendar..on that wall over there...suspended with year-old wall putty...gently wavering from the racid fumes of two week old, dirty socks and funky underwear?<br><br>
+	Yeah, we could do that. But, who has time to actually 'move' anymore?<br><br>Computers do things boring, mudane tasks so much more efficiently.Humanity, as such, has not the time for such idleness.</p>
+	</div>
+	<div class="moo">3
+	<p>The saxophone christened the ears like the Holy Waters of some centuries old Roman Catholic cathedral. Anyone soul with the faintest sense of rhythm knew the experience was nothing short of other-worldly!</p>
+	</div>
+	<div>4
+		<p>Few musicians possessed the power to blow your spirit, gracefully, into a celestial dimension. Louis Armstrong was in a class all by his lonesome. As I sit here and conjure images of what his music does to me; angels strumming harps come to mind; Seraphim radiate as bright as the Sun herself; Cherubim scurry about with infectious joy abound. When the lights went down and the music showered down, it was love at first listen. The saxophone christened the ears like the Holy Waters of some centuries old Roman Catholic cathedral. Anyone soul with the faintest sense of rhythm knew the experience was nothing short of other-worldly!</p>
+	</div>
+	<div>5
+	
+	</div>
+	<div>6</div>
+	<div>7</div>
+</div>
+
+<script>
+//Prog Bar functionality//
+var elem = document.getElementById("bar");
+var prog = document.getElementById("prog");
+var kola = document.getElementsByClassName("koala");
+  var width = 1;
+  var id = setInterval(frame, 33);
+//kola.remove(kola);
+  function frame() {
+	 
+    if (width >= 100) {
+      prog.remove(prog);
+      elem.remove(elem);
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+     document.getElementById("value").innerHTML = width  + '%';
+		 
+    }
+  }
+
+/*
+ if (kola.style.display == 'none') {
+    kola.style.display = 'block';
+  } else {
+    kola.style.display = 'none';
+  }
+  */
+</script>
+</body>
+</html>
