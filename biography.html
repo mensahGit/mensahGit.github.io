@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+
+body {
+  /*background: #533200;*/
+  background-color: #CC7A00;
+  /*background-color: #FFBD5C;*/
+}
+.list-group {
+  padding-left:25px;
+}
+.list-group-item {
+	font-family: 'Anton', serif;
+	font-size: 48px;
+	margin-right: 25px;
+}
+.list-group a {
+	text-decoration: none;
+  color: #FF9900;
+}
+
+.branding {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "company logo imenu"
+    "company logo imenu"
+    "company logo imenu"
+    ;
+	/*border: 1px solid black;*/
+	background-color: #CC7A00;
+  margin-bottom: 50px;
+}
+
+.branding img {
+	max-width: 90%;
+  margin-left:-50px;
+  padding-left:-120px;
+  /*border:1px solid black;*/
+}
+
+.schmoe {
+  font-family: 'Anton', serif;
+  font-size: 5em;
+  color: #000000;
+  /*margin: 0.5em;*/
+  grid-area: imenu;
+}
+
+.schmoe p {
+  margin:0;
+  padding-left: 25px;
+  
+}
+.fader {
+  margin:0;
+  padding-left: 25px;
+  color: #FF9900;
+}
+
+.schmoe_sub {
+font-family: 'Crimson Text', serif;
+font-size: 40px;
+text-align: left;
+padding-left: 25px;
+color: #FF9900;
+}
+
+img {
+  max-width: 98%;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+
+.dotter {
+  border: 5px dashed #FFBD5C;
+  margin-bottom: 100px;
+}
+
+
+
+.moo h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 36pt;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+.moo h3 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 24pt;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+.moo p {
+  font-family: 'Noto Serif', serif;
+  font-size: 18pt;
+  margin: 0;
+}
+
+.moo {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+  /*grid-template-columns: auto auto auto;*/
+  grid-template-columns: repeat(4,auto);
+  background-color: #FF9900;
+  padding: 10px;
+  color: #FF9900;
+}
+
+.moo .grid-item {
+  background-color: #CC7A00;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 50px;
+  margin: 50px;
+  font-size: 30px;
+  /*text-align: center;*/
+}
+
+footer {
+    background: #533200;
+}
+
+footer > section {
+    max-width: 1140px;
+    height: auto;
+    padding: 50px 10px;
+    color: #fff;
+    margin: auto;
+}
+
+
+.grid-container {
+ border: 3px solid #FF9900;
+  
+}
+.move-center{
+text-align:center;
+}
+
+/*
+////////////////////FLEXBOX MEDIA QUERIES
+*/
+@media screen and (max-width: 960px)  {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+  padding: 50px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+  .branding img {
+	display: none;
+}
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: -1em;
+  padding: 35px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  
+	<div class="branding">		
+<div class="list-group">
+  <a href="https://mensahgit.github.io/biography.html" class="list-group-item"><i class="fa fa-book"></i></a>
+  
+  <a href="https://mensahgit.github.io/vision.html" class="list-group-item"><i class="fa fa-eye"></i></a>
+  
+  <a href="https://mensahgit.github.io/products.html" class="list-group-item"><i class="fa fa-users"></i></a>
+  
+	<a href="https://mensahgit.github.io/services.html" class="list-group-item"><i class="fa fa-cog"></i></a>
+	
+  <a href="https://mensahgit.github.io/portfolio.html" 
+  class="list-group-item">
+  <i class="fa fa-file-image-o"></i></a>
+  
+</div><!--.list-group -->
+	<div class="schmoe">
+    <p>MENSAHDESIGNS</p>
+    <p class="fader">=>{ BIOGRAPHY }</p>
+		<p class="schmoe_sub">Creatively.</p><!--.schmoe_sub -->
+	</div><!--.schmoe -->
+		
+	<img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FlogoTeeth.png?alt=media&token=ae98faa2-4d91-4b1c-8e61-97cb09f57684" alt="MDE Logo">
+</div><!--.branding -->
+<hr class="dotter">
+  
+
+  <div class="moo">
+    <div class="grid-item">1
+    <h1 class="move-center">Part 1: Early Life & Growing Up Black In New Hampshire</h1>
+<p class="move-center">And so, that's how life began for the little brown diamond, born in Virginia, and getting his illustrious start in rugged, northern hills of the New Hampshire outback.</p>
+<br>
+  <div class="grid-item">2
+    <p>
+It all began one hot and humid summer afternoon on the outskirts of Newport News, Virginia. A little black boy was shot out of a southern constellation approximately three light years from Earth, making his way to the warm home and loving family of one Robert Moody and Naomi Jackson, Jr. Blessed with five other rockstar siblings, we moved North.</p>
+    </div>
+  <div class="grid-item">3
+    <p>Settling just north of Boston, Massachusetts..ok, who am I kidding- we moved to Nashua, New Hampshire. I lied. I lied. I feel so guilty. Not.
+I often just say Boston. People get it. Strangely, any mention of New Hampshire tends to lead to I welcomed conversations about hamsters, skiing in Vermont, maple syrup or the Primaries, none of which, particularly interest me much. So, Boston works just fine. That is, withstanding the occasional run-in with an actual Bostonian.<br><br>
+So, growing up in New Hampshire, how was it? Well, children really haven't much to say regarding the matter. Your parents do the best they can with what they have; and you do your best in turn. Let's give it up for all the badass parents out there. We love y'all.
+We were one of the two black families that I know of-you had the Moody's and the Joneses- or at least depending on where your house was located; it sure felt that way.</p>
+    </div> 
+      <div class="grid-item">4
+    <p>First, they tend to suffer because they see things others, when looking at the very same situation, just plain don't. The result: a type of inconsolable, life-long isolation and fathomless loneliness. And, it's inescapable. Yep, not going anywhere.
+You were born that way. You're stuck with this comedic plight. Deal.<br><br>
+Likewise, being black in a 'white country' reflects the very same comedic plight. Even, the very thought is kinda funny. In the South, they talk about being the 'fly in the buttermilk'. Honestly, it's a naturalistic anomaly no matter the context. Write it as a story. Paint it as a picture. Tell it as a joke. Bake it as a blueberry muffin-using only one little blueberry. It's funny. Deal.</p>
+    </div> 
+    
+     <div class="grid-item">5
+    <p>Now, how does the morbidly isolated and acutely perceptive comedian deal?
+He or she holds up a mirror to their audience. Ever notice a comedian playing to a room of one, isn't that funny? That's because the 'shared experience', which is key, is missing.<br><br> Sharing makes the comedian's perspective meaningful. The act of sharing his twisted, isolated yet seemingly truthful take has a healing, cathartic, enlightening effect on the audience. Further, the space is a safe one. The audience is safe to let their guard down. They are ok to be vulnerable for a few hours, placing their cherished intellects within the fumbling hands of the Kings' Joker. This feat is much more difficult for an audience of one. Insulting an audience of one is liable to get the comic a beatdown. Deal.</p>
+    </div> 
+     <div class="grid-item">6
+    <p>The parallel drawn merely seeks to give some insight and context to my experience growing up black in a predominantly Caucasian environment.<br><br> Does my experience speak to all blacks or even some? I cannot say. Now, if I grew up in a predominantly African-American community, would my experience as and world-view be different?<br><br> Again, I cannot speak with certainty but I would imagine so. For example, would I have developed a 'second skin'? Is this 'second skin' the result of being in a predominantly white community or just a willing victim of a racist America? Maybe some people out there have 'three skins'? Deal.</p>
+    </div> 
+
+<div class="grid-item">7
+    <p>To be Continued...</p><br><br>
+    <h1 class="move-center">Part 2: From Keene State to ChiTown</h1>
+    <h1 class="move-center">Part 3: Chilean Empanadas</h1>
+    <h1 class="move-center">Part 4: Life In Japan</h1>
+    <h1 class="move-center">Part 5: Santiago Is Changing</h1>
+    <h1 class="move-center">Part 6: Driving In Quito</h1>
+    </div>
+
+  </div>
+  
+</div><!--.grid-container -->
+
+<script>
+//Prog Bar functionality//
+var elem = document.getElementById("bar");
+var prog = document.getElementById("prog");
+var kola = document.getElementsByClassName("koala");
+  var width = 1;
+  var id = setInterval(frame, 33);
+//kola.remove(kola);
+  function frame() {
+	 
+    if (width >= 100) {
+      prog.remove(prog);
+      elem.remove(elem);
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+     document.getElementById("value").innerHTML = width  + '%';
+		 
+    }
+  }
+
+/*
+ if (kola.style.display == 'none') {
+    kola.style.display = 'block';
+  } else {
+    kola.style.display = 'none';
+  }
+  */
+</script>
+</body>
+</html>
