@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+
+body {
+  /*background: #533200;*/
+  background-color: #CC7A00;
+  /*background-color: #FFBD5C;*/
+}
+.list-group {
+  padding-left:25px;
+}
+.list-group-item {
+	font-family: 'Anton', serif;
+	font-size: 48px;
+	margin-right: 25px;
+}
+.list-group a {
+	text-decoration: none;
+  color: #FF9900;
+}
+
+.branding {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "company logo imenu"
+    "company logo imenu"
+    "company logo imenu"
+    ;
+	/*border: 1px solid black;*/
+	background-color: #CC7A00;
+  margin-bottom: 50px;
+}
+
+.branding img {
+	max-width: 90%;
+  margin-left:-50px;
+  padding-left:-120px;
+  /*border:1px solid black;*/
+}
+
+.schmoe {
+  font-family: 'Anton', serif;
+  font-size: 5em;
+  color: #000000;
+  /*margin: 0.5em;*/
+  grid-area: imenu;
+}
+
+.schmoe p {
+  margin:0;
+  padding-left: 25px;
+  
+}
+.fader {
+  margin:0;
+  padding-left: 25px;
+  color: #FF9900;
+}
+
+.schmoe_sub {
+font-family: 'Crimson Text', serif;
+font-size: 40px;
+text-align: left;
+padding-left: 25px;
+color: #FF9900;
+}
+
+img {
+  max-width: 98%;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+
+.dotter {
+  border: 5px dashed #FFBD5C;
+  margin-bottom: 100px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em; 
+}
+.card a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card:hover {
+  border: 6px solid #000000;
+  box-shadow: 3px 3px 8px hsl(0, 0%, 60%);
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  /*font-weight: normal;*/
+  font-family:'Lobster', cursive;
+  font-size: 2.7em;
+}
+.card-content p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  margin:0;
+}
+
+.grid-container {
+ /*border: 3px solid #FF9900;*/
+  
+}
+
+/*
+////////////////////FLEXBOX MEDIA QUERIES
+*/
+@media screen and (max-width: 960px)  {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+  padding: 50px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+  .branding img {
+	display: none;
+}
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: -1em;
+  padding: 35px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+}
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="grid-container">
+  
+		<div class="branding">		
+<div class="list-group">
+  <a href="https://mensahgit.github.io/biography.html" class="list-group-item"><i class="fa fa-book"></i></a>
+  
+  <a href="https://mensahgit.github.io/vision.html" class="list-group-item"><i class="fa fa-eye"></i></a>
+  
+  <a href="https://mensahgit.github.io/products.html" class="list-group-item"><i class="fa fa-users"></i></a>
+  
+	<a href="https://mensahgit.github.io/services.html" class="list-group-item"><i class="fa fa-cog"></i></a>
+	
+  <a href="https://mensahgit.github.io/portfolio.html" 
+  class="list-group-item">
+  <i class="fa fa-file-image-o"></i></a>
+  
+</div><!--.list-group -->
+	<div class="schmoe">
+    <p>MENSAHDESIGNS</p>
+    <p class="fader">=>{ PRODUCTS }</p>
+		<p class="schmoe_sub">Creatively.</p><!--.schmoe_sub -->
+	</div><!--.schmoe -->
+	<a href="https://mensahgit.github.io/mensahm.html" >	
+	<img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FlogoTeeth.png?alt=media&token=ae98faa2-4d91-4b1c-8e61-97cb09f57684" alt="MDE Logo"></a>
+</div><!--.branding -->
+<hr class="dotter">
+</body>
+</html>
