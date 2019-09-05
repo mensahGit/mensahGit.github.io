@@ -257,35 +257,6 @@ He or she holds up a mirror to their audience. Ever notice a comedian playing to
   
 </div><!--.grid-container -->
 
-<script>
-//Prog Bar functionality//
-var elem = document.getElementById("bar");
-var prog = document.getElementById("prog");
-var kola = document.getElementsByClassName("koala");
-  var width = 1;
-  var id = setInterval(frame, 33);
-//kola.remove(kola);
-  function frame() {
-	 
-    if (width >= 100) {
-      prog.remove(prog);
-      elem.remove(elem);
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-     document.getElementById("value").innerHTML = width  + '%';
-		 
-    }
-  }
 
-/*
- if (kola.style.display == 'none') {
-    kola.style.display = 'block';
-  } else {
-    kola.style.display = 'none';
-  }
-  */
-</script>
 </body>
 </html>
