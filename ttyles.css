@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+        h1 {	
+        	font-family: 'Lobster', serif;
+            font-size: 48px;
+            }
+        h3 {
+            font-family: 'Anton', serif;
+            font-size: 48px;
+            margin-right: 25px;
+            color: #FF9900;
+            /*font-weight: 400;*/
+        }
+        p {
+        	font-family: 'Merriweather', serif;
+            font-size: 24px;
+        }
+        
+        .grid-container {
+        display: grid;
+  		height: 400px;
+  		align-content: start;
+  		grid-template-columns: 1fr 1fr 1fr;
+ 		grid-gap: 10px;
+        }
+        
+        header {
+            display: grid;
+            padding: 0 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Crimson Text', serif;
+            font-size: 24px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        
+        .header img {
+        	position: absolute;
+        	top: 10px;
+  			left: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+        
+        .hero {
+            background-image: url("https://lh3.googleusercontent.com/Eg_O303PxV_QiqvdANZxIuYc9yRxx8s-mSDszYBcbG6fE9YnOGwXuFtNnN_zYrsfXnV-qLnEhrVEsvpQvEsydTEzeQHiBvhDOvRgBfZkYzJHdqxtilex41-65I6maVVUkbgmWGo2XvrJlTNhHHgK_ldNgdPeE17dwQithJm8HronF5Y-3HUHXvX33MbSbhAVsSi2Bm9CgGitW5Wed59XymknoiGt4vhZhuMgW_5FSSPhtssh2e3zKfW0JlJaJPN1yP1sSvzQ2JUWxVe5ryOWeKs7lHQ9Q3mREbun4FHDevY5tTMHTt0BuCYw8yMscC2k_T0vPc9oKj7E1nyJwiNWBa1211EvyQc2BkUnzFMfMqEJteOpW4amgB3pDzaeln3VVop5TDccE1wVNsFoY08C-OLzYfc-u608oq7aJ-9ePhczaaTGEC3Vsl0WMMNYASINWMhdulK4DU9pNYVm6p_ASQ4EcV5Oh_3lxQGuXkzyFtzXSAAmw9vPPR2jtll4mC4PMEyuw9BQ7Si1V3TOIbI3sKZSNwlRPcxkt1ZEYs2cp86kOTF_9U_vn0xOGuvCtqMi7NoI20T8lBPFud3zAws6aFN3jRQTdI8cNU4znustvaW5sM_MV7d5cGSvbueDPFr4CsUM6lHqtQmXvch-cpS1P0SGM6fgfWCfi61yIqzc92BsLI7FDZ3wBR4=w1063-h797-no");
+            background-size: cover;
+            height: 420px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+              
+        #mycontent {
+        font-family: 'Anton', serif;
+        font-size: 8px;
+        border: 12px solid green;
+        padding:25px;
+        background-color: #FFBD5C;
+        }
+       
+       div.meg {
+        color: #FF9900;
+        font-size: 18px;
+        border: 6px solid #FF9900;
+        padding:25px;
+        margin-top:60px;
+        background-color: #CC7A00;
+        }
+        .meg h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 48px;
+        color: #FF9900;
+        }
+        .meg p{
+        color: #FFBD5C;
+        }
