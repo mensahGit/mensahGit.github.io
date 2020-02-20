@@ -2,170 +2,17 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+<link rel="stylesheet" type="text/css" href="prod.css" >
+<link rel="stylesheet" type="text/css" href="mde.css" />
 
-body {
-  /*background: #533200;*/
-  background-color: #CC7A00;
-  /*background-color: #FFBD5C;*/
-}
-.list-group {
-  padding-left:25px;
-}
-.list-group-item {
-	font-family: 'Anton', serif;
-	font-size: 48px;
-	margin-right: 25px;
-}
-.list-group a {
-	text-decoration: none;
-  color: #FF9900;
-}
-
-.branding {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "company logo imenu"
-    "company logo imenu"
-    "company logo imenu"
-    ;
-	/*border: 1px solid black;*/
-	background-color: #CC7A00;
-  margin-bottom: 50px;
-}
-
-.branding img {
-	max-width: 90%;
-  margin-left:-50px;
-  padding-left:-120px;
-  /*border:1px solid black;*/
-}
-
-.schmoe {
-  font-family: 'Anton', serif;
-  font-size: 5em;
-  color: #000000;
-  /*margin: 0.5em;*/
-  grid-area: imenu;
-}
-
-.schmoe p {
-  margin:0;
-  padding-left: 25px;
-  
-}
-.fader {
-  margin:0;
-  padding-left: 25px;
-  color: #FF9900;
-}
-
-.schmoe_sub {
-font-family: 'Crimson Text', serif;
-font-size: 40px;
-text-align: left;
-padding-left: 25px;
-color: #FF9900;
-}
-
-img {
-  max-width: 98%;
-  padding-top: 45px;
-  padding-bottom: 5px;
-}
-
-.dotter {
-  border: 5px dashed #FFBD5C;
-  margin-bottom: 100px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card {
-  background: #FFF;
-  margin-right: 3em;
-  margin-bottom: 3em; 
-}
-.card a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.card:hover {
-  border: 6px solid #000000;
-  box-shadow: 3px 3px 8px hsl(0, 0%, 60%);
-}
-
-.card-content {
-  padding: 25px;
-}
-
-.card-content h2 {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  /*font-weight: normal;*/
-  font-family:'Lobster', cursive;
-  font-size: 2.7em;
-}
-.card-content p {
-  font-family: 'Josefin Slab', serif;
-  font-size: 1.5em;
-  margin:0;
-}
-
-.grid-container {
- /*border: 3px solid #FF9900;*/
-  
-}
-
-/*
-////////////////////FLEXBOX MEDIA QUERIES
-*/
-@media screen and (max-width: 960px)  {
-  .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2em;
-  padding: 50px;
-}
-  .card {
-  display: grid;
-  background: #FFF;
-  margin-right: 3em;
-  margin-bottom: 3em;
-  margin-bottom: 1em;
-}
-  .branding img {
-	display: none;
-}
-}
-
-@media screen and (max-width: 640px) {
-  .cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: -1em;
-  padding: 35px;
-}
-  .card {
-  display: grid;
-  background: #FFF;
-  margin-right: 3em;
-  margin-bottom: 3em;
-  margin-bottom: 1em;
-}
-}
-</style>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
-<body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="grid-container">
+<body>
+<div class="grid-container" id="demo">
+  
   
 		<div class="branding">		
 <div class="list-group">
@@ -184,7 +31,7 @@ img {
 </div><!--.list-group -->
 	<div class="schmoe">
     <p>MENSAHDESIGNS</p>
-    <p class="fader">=>{ PRODUCTS }</p>
+    <p class="fader">=>{ NEW PRODUCTS }</p>
 		<p class="schmoe_sub">Creatively.</p><!--.schmoe_sub -->
 	</div><!--.schmoe -->
 	<a href="https://mensahgit.github.io/mensahm.html" >	
@@ -192,129 +39,101 @@ img {
 </div><!--.branding -->
 <hr class="dotter">
 
- <div class="cards">
-    
-  <div>1
-  <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FANOTHERPIECE.png?alt=media&token=a4a07e42-727c-440c-8f49-04aacc164bbd" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Shaman Magic</h2>
-            <p>Shaman work their magic effortlessly.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#1 -->
-  
-  <div>2
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FFEMALESCHIELE2.png?alt=media&token=5cfe37f6-38b8-44a6-a4d8-ed8f7b0c4824"alt="Female Schiele">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Female Schiele</h2>
-            <p>Witness the neurotic, calculated, elongated, and downright, unmistakable lines of Schiele.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#2 -->
-    
-  <div>3
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FMASTERPIECE.png?alt=media&token=538965de-ee97-4f60-b1c2-5efa3ebe05f8" alt="Masterpiece" style="width:300px;height:380px;" alt="Masterpiece">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Masterpiece</h2>
-            <p>Suggestive. Swift. Piercing and unapologetic, Kabuki-style.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#3 -->
-    
-  <div>4
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FBORJ_PSD.png?alt=media&token=f33e991a-8184-4877-ad10-47a896f1d6fb" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Troublesome</h2>
-            <p>It's in the eyes. He's clearly hungry.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#4 -->
-    
-  <div>5
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FIMG_5490_FINAL.png?alt=media&token=fd3d5edf-7440-4704-bba9-fbd20842dbc0" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Louis Armstrong</h2>
-            <p>The Man, The Legend.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#5 -->
-    
-  <div>6
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FIMG_5212_FINAL2.png?alt=media&token=c84686ce-9523-4966-b464-038398d0a40c" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>She Bling.</h2>
-            <p>Flossin' ain't easy but someone's gotta do it.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#6 -->
-    
-  <div>7
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="http://www.w3schools.com/html/img_girl.jpg" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Biscuits & Gravy</h2>
-            <p>Who don't like biscuits?</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#7 -->
-    
-  <div>8
-    <!-- BEGIN CARD.... -->   
-    <article class="card">
-      <a href="#">
-        <figure class="thumbnail">
-          <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Skeptical Face">
-         </figure><!--.thumbnail -->
-          <div class="card-content">
-            <h2>Small Wonder</h2>
-            <p>I remember those days.</p>
-          </div><!--.card-content -->
-        </a>
-    </article><!--.card -->
-  </div><!--ENDCARD#8 -->
-    
-    </div><!--.cards -->
-</div><!--.grid-container -->
+
+<main id="beef">
+    <div class="section section-gray">
+        <div class="section-content">
+            <div class="product-details">
+                <ul class="product-images">
+                    <li class="preview"><img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FFEMALESCHIELE2.png?alt=media&token=5cfe37f6-38b8-44a6-a4d8-ed8f7b0c4824" alt=""></li>
+                    <!-- Don't show small pictures if there's only 1 -->
+                    <li>
+                        <a href="javascript:void(0)"><img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FFEMALESCHIELE2.png?alt=media&token=5cfe37f6-38b8-44a6-a4d8-ed8f7b0c4824" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FMASTERPIECE.png?alt=media&token=538965de-ee97-4f60-b1c2-5efa3ebe05f8" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FIMG_5212_FINAL2.png?alt=media&token=c84686ce-9523-4966-b464-038398d0a40c" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="https://firebasestorage.googleapis.com/v0/b/presidents-29d5c.appspot.com/o/uploads%2FBORJ_PSD.png?alt=media&token=f33e991a-8184-4877-ad10-47a896f1d6fb" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="product-info">
+                    <li class="product-name"><p class="booger" class="beef">Fender Poke</p></li>
+                    
+                    
+                    <li class="product-price"><span>$</span><span>20.00</span></li>
+                    
+                    <li class="product-addtocart">
+                        <button>Add To Cart</button>
+                    </li>
+                    <li class="product-description">
+                        <p>Beautiful designs by beautiful minds. :)</p>
+                        <p>Do you know the time? Regardless, you too can be
+                        cool. Buy this. Buy that. Eat this. Eat That. The time is of the essence. Buy now!</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+</main>   
+
+    </div><!--.grid-container -->
+
 </body>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script >var Chef = {
+    init: function() {
+        this.productImagePreview();
+        this.menuToggle();
+        this.misc();
+    },
+    
+    productImagePreview: function() {
+        $(document).on('click', '.product-images li', function() {
+            if (!$(this).hasClass('preview')) {
+                var src = $(this).find('img').attr('src');
+                $('.product-images .preview img').attr('src', src);
+            }
+        });
+    },
+    
+    menuToggle: function() {
+        $(document).on('click', '#menu .trigger', function() {
+            // Toggle open and close icons
+            $(this).find('img').each(function() {
+                if ($(this).hasClass('hidden')) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
+            });
+            
+            // Toggle menu links
+            $(this).siblings('.links').stop(true, true).slideToggle(200);
+            
+            // Toggle open class
+            $('#menu').toggleClass('open');
+       });
+    },
+    
+    misc: function() {
+        // Misc stuff
+        
+        for (var i = 1; i <= 3; i++) {if (window.CP.shouldStopExecution(1)){break;}
+            $('.product').parent().eq(0).clone().appendTo('.product-list');
+        }
+window.CP.exitedLoop(1);
+
+    }
+};
+
+$(function() {
+    Chef.init();
+});
+//# sourceURL=pen.js
+</script>
 </html>
