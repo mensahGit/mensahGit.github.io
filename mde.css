@@ -9,11 +9,16 @@ body {
   padding-left:25px;
 }
 .list-group-item {
-	background-color: #CC7A00;
 	font-family: 'Anton', serif;
 	font-size: 48px;
 	margin-right: 25px;
 }
+
+a.list-group-item {
+	background-color: #CC7A00;
+}
+
+
 .list-group a {
 	text-decoration: none;
   color: #FF9900;
