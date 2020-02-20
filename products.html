@@ -5,9 +5,190 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <link rel="stylesheet" type="text/css" href="prod.css">
-	<link rel="stylesheet" type="text/css" href="mde.css">
+	<!-- <link rel="stylesheet" type="text/css" href="mde.css"> -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<style>
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter|Crimson+Text|Josefin+Slab|Libre+Baskerville|Lobster|Merriweather|Merriweather+Sans|Montserrat|Noto+Serif|Open+Sans:300|Oswald*700|Tittillium+Web");
+
+body {
+  /*background: #533200;*/
+  background-color: #CC7A00;
+  /*background-color: #FFBD5C;*/
+}
+.list-group {
+  padding-left:25px;
+}
+.list-group-item {
+	font-family: 'Anton', serif;
+	font-size: 48px;
+	margin-right: 25px;
+}
+.list-group a {
+	text-decoration: none;
+  color: #FF9900;
+}
+
+.branding {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "company logo imenu"
+    "company logo imenu"
+    "company logo imenu"
+    ;
+	/*border: 1px solid black;*/
+	background-color: #CC7A00;
+  margin-bottom: 50px;
+}
+
+.branding img {
+	max-width: 90%;
+  margin-left:-50px;
+  padding-left:-120px;
+  /*border:1px solid black;*/
+}
+
+.schmoe {
+  font-family: 'Anton', serif;
+  font-size: 5em;
+  color: #000000;
+  /*margin: 0.5em;*/
+  grid-area: imenu;
+}
+
+.schmoe p {
+  margin:0;
+  padding-left: 25px;
+  
+}
+.fader {
+  margin:0;
+  padding-left: 25px;
+  color: #FF9900;
+}
+
+.schmoe_sub {
+font-family: 'Crimson Text', serif;
+font-size: 40px;
+text-align: left;
+padding-left: 25px;
+color: #FF9900;
+}
+
+img {
+  max-width: 98%;
+  padding-top: 45px;
+  padding-bottom: 5px;
+}
+
+.dotter {
+  border: 5px dashed #FFBD5C;
+  margin-bottom: 100px;
+}
+
+
+
+.moo h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 36pt;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+.moo h3 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 24pt;
+  /*margin: 0.5em;*/
+  margin: 0;
+}
+
+.moo p {
+  font-family: 'Noto Serif', serif;
+  font-size: 18pt;
+  margin: 0;
+}
+
+.moo {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 20px;
+  /*grid-template-columns: auto auto auto;*/
+  grid-template-columns: repeat(4,auto);
+  background-color: #FF9900;
+  padding: 10px;
+  color: #FF9900;
+}
+
+.moo .grid-item {
+  background-color: #CC7A00;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 50px;
+  margin: 50px;
+  font-size: 30px;
+  /*text-align: center;*/
+}
+
+footer {
+    background: #533200;
+}
+
+footer > section {
+    max-width: 1140px;
+    height: auto;
+    padding: 50px 10px;
+    color: #fff;
+    margin: auto;
+}
+
+
+.grid-container {
+ border: 3px solid #FF9900;
+  
+}
+.move-center{
+text-align:center;
+}
+
+/*
+////////////////////FLEXBOX MEDIA QUERIES
+*/
+@media screen and (max-width: 960px)  {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+  padding: 50px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+  .branding img {
+	display: none;
+}
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: -1em;
+  padding: 35px;
+}
+  .card {
+  display: grid;
+  background: #FFF;
+  margin-right: 3em;
+  margin-bottom: 3em;
+  margin-bottom: 1em;
+}
+}
+</style>
 </head>
 
 <body>
